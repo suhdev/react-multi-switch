@@ -4,6 +4,8 @@
   "description": "A multi-state switch UI component for ReactJS applications written in TypeScript. ",
   "main": "index.js",
   "scripts": {
+    "prestart": "sass --scss -t compressed sass/react-multi-switch.scss dist/css/react-multi-switch.min.css && sass --scss sass/react-multi-switch.scss dist/css/react-multi-switch.css",
+    "start": "cd dist && python -m SimpleHTTPServer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,16 @@
     "jspm": "^0.16.39",
     "tslint": "^3.11.0",
     "typescript": "^1.8.10"
+  },
+  "jspm": {
+    "dependencies": {
+      "react": "npm:react@^15.1.0",
+      "react-dom": "npm:react-dom@^15.1.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }

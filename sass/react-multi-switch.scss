@@ -1,0 +1,57 @@
+$react-multi-switch-height:2.6em !default;
+$react-multi-switch-gutter:4px !default;
+$react-multi-switch-state-padding:0px 10px !default;
+$react-multi-switch-state-background:rgba(0,0,0,0.7) !default;
+$react-multi-switch-state-border-radius:0px !default;
+$react-multi-switch-knob-border-color:rgba(230,60,60,0.7) !default;
+$react-multi-switch-knob-transition-duration:0.5s !default;
+$react-multi-switch-knob-transition-fn:cubic-bezier(0,0,0,1) !default;
+%box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.react-multi-switch{
+    @extend %box;
+    position:relative;
+    line-height: $react-multi-switch-height;
+    height:$react-multi-switch-height;
+    display:inline-block;
+
+    .rms-state{
+        @extend %box;
+        display:inline-block;
+        text-align:center;
+        cursor:pointer;
+        line-height: $react-multi-switch-height;
+        height:$react-multi-switch-height;
+        padding:$react-multi-switch-state-padding;
+        background:$react-multi-switch-state-background;
+        -webkit-border-radius: $react-multi-switch-state-border-radius;
+        -moz-border-radius: $react-multi-switch-state-border-radius;
+        -ms-border-radius: $react-multi-switch-state-border-radius;
+        -o-border-radius: $react-multi-switch-state-border-radius;
+        border-radius: $react-multi-switch-state-border-radius;
+        margin:0px $react-multi-switch-gutter/2;
+    }
+
+    .rms-knob{
+        position:absolute;
+        display:block;
+        // height:100%;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        left:0px;
+        top:-2px;
+        height:100%;
+        border:$react-multi-switch-gutter/2 solid $react-multi-switch-knob-border-color;
+        -webkit-transition: transform $react-multi-switch-knob-transition-duration $react-multi-switch-knob-transition-fn;
+        -o-transition: transform $react-multi-switch-knob-transition-duration $react-multi-switch-knob-transition-fn;
+        transition: transform $react-multi-switch-knob-transition-duration $react-multi-switch-knob-transition-fn;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}

@@ -14,7 +14,7 @@ export class SwitchItem extends React.Component {
     }
     render() {
         let e = this.props;
-        return (React.createElement("div", {className: "of-switch-state", onClick: this.onClick, "data-index": e.index}, e.label));
+        return (React.createElement("div", {className: "rms-state", style: { width: e.width + 'px' }, onClick: this.onClick, "data-index": e.index}, e.label));
     }
 }
 //# sourceMappingURL=SwitchItem.js.map

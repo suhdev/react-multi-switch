@@ -8,6 +8,7 @@ export interface SwitchItemProps{
     itemKey:string;
     index:number;
     label:string;
+    width:number;
     onClick:Function;
 }
 
@@ -30,7 +31,7 @@ export class SwitchItem extends React.Component<SwitchItemProps,any>{
     render(){
         let e = this.props; 
         return (
-            <div className="of-switch-state" onClick={this.onClick} data-index={e.index} >{e.label}</div>
+            <div className="rms-state" style={{width:e.width+'px'}} onClick={this.onClick} data-index={e.index} >{e.label}</div>
         );
     }
 }

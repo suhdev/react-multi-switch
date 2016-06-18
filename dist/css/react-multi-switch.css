@@ -1,0 +1,43 @@
+.react-multi-switch, .react-multi-switch .rms-state {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.react-multi-switch {
+  position: relative;
+  line-height: 2.6em;
+  height: 2.6em;
+  display: inline-block; }
+  .react-multi-switch .rms-state {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2.6em;
+    height: 2.6em;
+    padding: 0px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    margin: 0px 2px; }
+  .react-multi-switch .rms-knob {
+    position: absolute;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    left: 0px;
+    top: -2px;
+    height: 100%;
+    border: 2px solid rgba(230, 60, 60, 0.7);
+    -webkit-transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+    -o-transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+
+/*# sourceMappingURL=react-multi-switch.css.map */
